@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="example.game_project.GameController">
+   <children>
+      <Button fx:id="StartGame" layoutX="406.0" layoutY="53.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="335.0" text="StartGame">
+         <font>
+            <Font name="Century Gothic" size="24.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
