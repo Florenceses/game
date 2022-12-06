@@ -62,7 +62,7 @@ public class HelloController {
             stage.show();
         });
         gamestart.setOnAction(actionEvent -> {
-            gamestart.getScene().getWindow();
+            gamestart.getScene().getWindow().hide();
 
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("createperson.fxml"));

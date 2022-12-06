@@ -1,5 +1,6 @@
 package example.game_project;
 
-public class GameController {
+public class GameController extends PersonController {
+
 
 }
