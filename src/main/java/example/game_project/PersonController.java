@@ -8,28 +8,29 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 
-public class PersonController {
+public class PersonController extends GameController {
 
     @FXML
-    private TextField arm;
+    public static TextField arm;
 
     @FXML
     private Button crt;
 
     @FXML
-    private TextField dmg;
+    public static TextField dmg;
 
     @FXML
-    private TextField hp;
+    public static TextField hp;
 
     @FXML
-    private TextField name;
+    public static TextField name;
 
     @FXML
     private Label error;
 
     @FXML
     void initialize() {
+
         crt.setOnAction(actionEvent1 -> {
             String NAME = name.getText().trim();
             String DAMAGE = dmg.getText().trim();
@@ -73,5 +74,6 @@ public class PersonController {
     });
 
         }
+
     }
 
