@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="236.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="example.game_project.PersonController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="367.0" prefWidth="236.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="example.game_project.PersonController">
    <children>
       <AnchorPane prefHeight="140.0" prefWidth="236.0" style="-fx-background-color: lightblue;">
          <children>
@@ -23,10 +23,9 @@
          </children>
       </AnchorPane>
       <TextField fx:id="name" layoutX="35.0" layoutY="182.0" promptText="Name" />
-      <TextField fx:id="dmg" layoutX="35.0" layoutY="231.0" promptText="Damage" />
-      <TextField fx:id="hp" layoutX="35.0" layoutY="281.0" promptText="HealthBar" />
-      <TextField fx:id="arm" layoutX="35.0" layoutY="329.0" promptText="Armore" />
-      <Button fx:id="crt" layoutX="55.0" layoutY="383.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="102.0" text="Create">
+      <TextField fx:id="hp" layoutX="35.0" layoutY="226.0" promptText="HealthBar" />
+      <TextField fx:id="arm" layoutX="35.0" layoutY="274.0" promptText="Armore" />
+      <Button fx:id="crt" layoutX="55.0" layoutY="328.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="102.0" text="Create">
          <font>
             <Font name="Century Gothic" size="13.0" />
          </font>

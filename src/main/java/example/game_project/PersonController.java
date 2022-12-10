@@ -11,25 +11,17 @@ import javafx.stage.Stage;
 public class PersonController extends GameController {
 
     static String name1;
-    static String damage1;
     static String healt1;
     static String armore1;
 
     @FXML
     public  TextField arm;
-
     @FXML
     private Button crt;
-
-    @FXML
-    public  TextField dmg;
-
     @FXML
     public  TextField hp;
-
     @FXML
     public  TextField name;
-
     @FXML
     private Label error;
 
@@ -38,10 +30,9 @@ public class PersonController extends GameController {
 
         crt.setOnAction(actionEvent1 -> {
            name1 = name.getText().trim();
-           damage1 = dmg.getText().trim();
            healt1 = hp.getText().trim();
            armore1 = arm.getText().trim();
-            if (!name1.isEmpty() && !damage1.isEmpty() && !healt1.isEmpty() && !armore1.isEmpty()) {
+            if (!name1.isEmpty() && !healt1.isEmpty() && !armore1.isEmpty()) {
 
                 crt.getScene().getWindow().hide();
                 FXMLLoader loader = new FXMLLoader();
