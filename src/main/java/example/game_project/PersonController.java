@@ -10,20 +10,25 @@ import javafx.stage.Stage;
 
 public class PersonController extends GameController {
 
+    static String name1;
+    static String damage1;
+    static String healt1;
+    static String armore1;
+
     @FXML
-    public static TextField arm;
+    public  TextField arm;
 
     @FXML
     private Button crt;
 
     @FXML
-    public static TextField dmg;
+    public  TextField dmg;
 
     @FXML
-    public static TextField hp;
+    public  TextField hp;
 
     @FXML
-    public static TextField name;
+    public  TextField name;
 
     @FXML
     private Label error;
@@ -32,11 +37,12 @@ public class PersonController extends GameController {
     void initialize() {
 
         crt.setOnAction(actionEvent1 -> {
-            String NAME = name.getText().trim();
-            String DAMAGE = dmg.getText().trim();
-            String HP = hp.getText().trim();
-            String ARMORE = arm.getText().trim();
-            if (!NAME.isEmpty() && !DAMAGE.isEmpty() && !HP.isEmpty() && !ARMORE.isEmpty()) {
+           name1 = name.getText().trim();
+           damage1 = dmg.getText().trim();
+           healt1 = hp.getText().trim();
+           armore1 = arm.getText().trim();
+            if (!name1.isEmpty() && !damage1.isEmpty() && !healt1.isEmpty() && !armore1.isEmpty()) {
+
                 crt.getScene().getWindow().hide();
                 FXMLLoader loader = new FXMLLoader();
                 loader.setLocation(getClass().getResource("game.fxml"));
@@ -53,7 +59,7 @@ public class PersonController extends GameController {
             } else {
                         error.setText("Заповніть усі поля");
                     }
-            if (!(HP == String.valueOf(100)) && !(ARMORE == String.valueOf(100))) {
+            if (!(healt1 == String.valueOf(100)) && !(armore1 == String.valueOf(100))) {
                 crt.getScene().getWindow().hide();
                 FXMLLoader loader = new FXMLLoader();
                 loader.setLocation(getClass().getResource("game.fxml"));

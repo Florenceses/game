@@ -4,28 +4,30 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
+import static example.game_project.PersonController.*;
+
 public class GameController {
     @FXML
     private Button StartGame;
 
     @FXML
-    public static TextField a;
+    public TextField a;
 
     @FXML
-    public static TextField d;
+    public TextField d;
 
     @FXML
-    public static TextField h;
+    public TextField h;
 
     @FXML
-    public static TextField n;
+    public TextField n;
 
     @FXML
     void initialize() {
-        n.setText(String.valueOf(PersonController.name));
-        a.setText(String.valueOf(PersonController.arm));
-        h.setText(String.valueOf(PersonController.hp));
-        d.setText(String.valueOf(PersonController.dmg));
+        n.setText( name1);
+        d.setText( damage1);
+        h.setText( healt1);
+        a.setText( armore1);
 
 
     }
