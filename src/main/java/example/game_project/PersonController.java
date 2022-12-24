@@ -8,7 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 
-public class PersonController extends GameController {
+public class PersonController {
 
     static String name1;
     static String healt1;

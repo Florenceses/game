@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -20,5 +22,15 @@
             <Font name="Century Gothic" size="17.0" />
          </font>
       </Label>
+      <ImageView fx:id="pers1" fitHeight="220.0" fitWidth="330.0" layoutX="-50.0" layoutY="678.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/pers1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pers2" fitHeight="220.0" fitWidth="330.0" layoutX="955.0" layoutY="658.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/pers2.jpg" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
